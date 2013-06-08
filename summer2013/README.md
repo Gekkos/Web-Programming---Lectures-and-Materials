@@ -25,3 +25,9 @@ Some useful links from the slides. For full list, check the slides.
 * [HTML 5 Validator](http://validator.nu/)
 * [HTML 5 Pollyfils](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills)
 * The last 3 slides from the 2012 Lecture on Front End are full with links and materials. Check them!
+
+## 3. Introduction to PHP
+
+* [Code example with array_map from the lecture](https://gist.github.com/RadoRado/338b3207ba80a031de71)
+* [How to Install WAMP under Windows 7](http://www.youtube.com/watch?v=3j5lxcV_320)
+* [How to Install Apache and PHP under Ubuntu](http://www.howtogeek.com/howto/ubuntu/installing-php5-and-apache-on-ubuntu/)
