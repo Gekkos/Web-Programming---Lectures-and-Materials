@@ -37,3 +37,9 @@ Some useful links from the slides. For full list, check the slides.
 * [Code for the Simple Calculator from 2013](https://gist.github.com/RadoRado/9a8381d0389869cb9dfa)
 * [Code examples from 2012](https://github.com/RadoRado/PHP2012-Examples)
 * [PHP Superglobals Reference](http://php.net/manual/en/language.variables.superglobals.php)
+
+## 5. Introduction to Object Oriented Programming in PHP
+
+* [A good list of differences between Java and PHP OOP](http://stackoverflow.com/questions/411254/what-are-the-differences-between-php-and-java)
+* [PHP OOP For Beginners](http://net.tutsplus.com/tutorials/php/object-oriented-php-for-beginners/)
+* [PHP OOP Documentation - A great reference guide](http://php.net/manual/en/language.oop5.php)
