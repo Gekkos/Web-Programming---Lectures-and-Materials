@@ -1,0 +1,146 @@
+<!doctype html>
+ 
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>jQuery UI Autocomplete with PHP Source</title>
+  <link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.3.custom.css" />
+  <style type="text/css">
+  	#selectedLanguaes { 
+  		list-style-type: none; 
+  		margin: 0; 
+  		padding: 0; 
+  		width: 50%; 
+  	}
+
+  	#selectedLanguaes li { 
+  		margin: 0 3px 3px 3px; 
+  		padding: 0.4em; 
+  		padding-left: 1.5em; 
+  		font-size: 1.4em; 
+  		height: 18px; 
+  	}
+  	
+  	#selectedLanguaes li span { 
+  		position: absolute; 
+  		margin-left: -1.3em; 
+  	}
+
+  	#progress {
+  	  width: 200px;
+  	}
+  </style>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="tags">Select Language: </label>
+  <input id="tags" />
+</div>
+
+<div class="ui-widget">
+	<div id="progress"></div>
+	<span id="progressMeta"></span>
+</div>
+<br style="clear:both" />
+
+<div class="ui-widget">
+	<ul id="selectedLanguaes">
+
+	</ul>
+</div>
+<script type="text/javascript" src="jquery-2.0.0.js"></script>
+<script type="text/javascript" src="jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript" src="underscore.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var config = {
+			sortableTemplate : '<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><%= itemName %></li>',
+			progressSpanTemplate : '<%= current %> / <%= limit %> completed',
+			sortableLimit : 5
+		};
+
+		var Progress = {
+			limit : 10, // default
+			element : "#progress", // default
+			init : function() {
+				$( this.element ).progressbar({
+					value: 0
+				});
+				this.update(0);
+			},
+			update : function(newCount) {
+				if(this.isPassTheLimit(newCount)) {
+					this.handlePassTheLimit();
+					return false;
+				}
+
+				var newPercentage = Math.round((newCount / this.limit) * 100);
+				$( this.element ).progressbar({
+					value: newPercentage
+				});
+
+				var spanHtml = _.template(config.progressSpanTemplate, {
+					current : newCount,
+					limit : this.limit
+				});
+
+				$( this.element ).next().html(spanHtml);
+			},
+			isPassTheLimit : function(count) {
+				return count > this.limit;
+			},
+			handlePassTheLimit : function() {
+				alert("NO MORE! LIMIT REACHED");
+			}
+		};
+
+		var SortableLanguages = {
+			element : "#sortable", // default
+			init : function() {
+				$( this.element ).sortable();
+			},
+			addLanguage : function(language) {
+				var html = _.template(config.sortableTemplate, {
+					itemName : language
+				});
+				var $sortable = $( this.element );
+				$sortable.append(html);
+
+				return $sortable.children().length;
+			}
+		};
+
+		var buildAutocomplete = function(availableTags) {
+			$( "#tags" ).autocomplete({
+			  source: availableTags,
+			  select : function(event, ui) {
+			  	console.log(ui.item.value);
+			  	var newCount = SortableLanguages.addLanguage(ui.item.value);
+			  	
+			  	Progress.update(newCount);
+
+			  	this.value = "";
+			  	return false;
+			  }
+			});
+		};
+
+		var fetchTags = function() {
+			$.getJSON("autocomplete.php", function(data) {
+				console.log(data);
+				buildAutocomplete(data);
+			});
+		};
+
+		fetchTags();
+
+		SortableLanguages.element = "#selectedLanguaes";
+		SortableLanguages.init();
+
+		Progress.limit = config.sortableLimit;
+		Progress.init();
+	});
+</script>
+</body>
+</html>
