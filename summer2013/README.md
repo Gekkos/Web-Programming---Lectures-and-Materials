@@ -64,3 +64,8 @@ If you think you can add interesting stuff - do a pull request !
 
 * [The presentation can be found here](http://gsamokovarov.github.io/underscore-introduction/#/)
 * [void 0 in JavaScript](http://stackoverflow.com/questions/7452341/what-does-void-0-mean)
+
+## 10. Introduction to jQuery
+
+* [Code examples from 2013 - A simple TODO List](https://gist.github.com/RadoRado/5586606)
+* [Interactive jQuery Examples](http://try.jquery.com/)
