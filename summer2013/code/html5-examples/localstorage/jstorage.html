@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>jStorage Example</title>
+	
+</head>
+<body>
+	<a href="http://fmi.uni-sofia.bg">FMI</a>
+	<input id="input1" type="text" />
+	<br />
+	<input id="input2" type="text" />
+	<br />
+	<input id="input3" type="text" />
+	<br />
+	<button id="theFlusher">Flush all!</button>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.js"></script>
+<script type="text/javascript" src="http://underscorejs.org/underscore.js"></script>
+<script src="https://raw.github.com/andris9/jStorage/master/jstorage.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("a").click(function(event) {
+			event.preventDefault();
+		});
+
+
+		_.each($.jStorage.index(), function(jStorageKey) {
+			var 
+				selector = "#" + jStorageKey,
+				inputValue = $.jStorage.get(jStorageKey);
+
+			$(selector).val(inputValue);
+		});
+
+		$("input").keyup(function(event) {
+			var inputId = $(this).attr("id");
+			$.jStorage.set("allInputs");
+			$.jStorage.set(inputId, $(this).val());
+		});
+
+		$("#theFlusher").click($.jStorage.flush);
+	});
+</script>
+</body>
+</html>

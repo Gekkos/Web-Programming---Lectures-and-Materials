@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Sockets Echo Server</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="http://documentcloud.github.com/underscore/underscore.js"></script>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <script>
+  $(document).ready(function() {
+    var socket = io.connect('http://localhost:1337');
+
+    socket.emit("socketconnected");
+    socket.on("socketconnected", function(data) {
+      console.log("Someone has connected");
+    });
+
+    socket.on('echo', function (data) {
+      alert(data.message);
+    });
+
+    $("button").click(function() {
+      socket.emit('echo', {
+        message : $("#echoTextArea").val()
+      });
+    });
+
+  });
+  </script>
+
+  <textarea id="echoTextArea"></textarea>
+  <br />
+  <button>Send to Server</button>
+</body>
+</html>

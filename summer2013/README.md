@@ -70,4 +70,17 @@ If you think you can add interesting stuff - do a pull request !
 * [Code examples from 2013 - A simple TODO List](https://gist.github.com/RadoRado/5586606)
 * [Interactive jQuery Examples](http://try.jquery.com/)
 
-## 11.
+## 11. Introduction to AJAX
+
+* [Code examples with AJAX](https://github.com/RadoRado/Web-Programming---Lectures-and-Materials/tree/master/summer2013/code/ajax-examples)
+* [The TODO List with Backbone.JS and AJAX](https://github.com/RadoRado/Web-Programming---Lectures-and-Materials/tree/master/summer2013/code/todo-list-with-ajax)
+
+## 12. HTML 5 and the new JavaScript API.
+
+* Code examples
+
+## 13. CoffeeScript & jQuery UI
+
+* [CoffeScript official Reference & Guide](http://coffeescript.org/)
+* [The little (cook)book of CoffeeScript](http://arcturo.github.io/library/coffeescript/)
+* [jQuery UI demos with API and Code Examples](http://jqueryui.com/)
