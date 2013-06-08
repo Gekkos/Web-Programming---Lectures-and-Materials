@@ -48,3 +48,10 @@ Some useful links from the slides. For full list, check the slides.
 
 No additional materials here.
 If you think you can add interesting stuff - do a pull request !
+
+## 7. Working with PHP and MySQL. The MySQLi extension.
+
+* [Code example from 2013 Lecture](https://gist.github.com/RadoRado/10c94d9ed5d8ed636ea5)
+* [Code example from 2012 - A simple web store](https://github.com/RadoRado/PHP2012-Examples)
+* [MySQLi Extension For Beginners](http://codular.com/php-mysqli)
+* [When to use MySQLi over MySQL extension ? (Every possible time !)](http://stackoverflow.com/questions/8891443/when-should-i-use-mysqli-instead-of-mysql)
