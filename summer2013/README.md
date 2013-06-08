@@ -31,3 +31,9 @@ Some useful links from the slides. For full list, check the slides.
 * [Code example with array_map from the lecture](https://gist.github.com/RadoRado/338b3207ba80a031de71)
 * [How to Install WAMP under Windows 7](http://www.youtube.com/watch?v=3j5lxcV_320)
 * [How to Install Apache and PHP under Ubuntu](http://www.howtogeek.com/howto/ubuntu/installing-php5-and-apache-on-ubuntu/)
+
+## 4. Passing data between the client and the sever. Introduction to Forms and handling POST and GET requests. Superglobals.
+
+* [Code for the Simple Calculator from 2013](https://gist.github.com/RadoRado/9a8381d0389869cb9dfa)
+* [Code examples from 2012](https://github.com/RadoRado/PHP2012-Examples)
+* [PHP Superglobals Reference](http://php.net/manual/en/language.variables.superglobals.php)
