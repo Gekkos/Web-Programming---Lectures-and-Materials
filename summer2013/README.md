@@ -59,3 +59,8 @@ If you think you can add interesting stuff - do a pull request !
 ## 8. Introduction to JavaScript
 
 * [A series of videos done by Douglas Crockford on the JavaScript topic. A must watch.](http://www.yuiblog.com/crockford/)
+
+## 9. Introduction to UnderscoreJS
+
+* [The presentation can be found here](http://gsamokovarov.github.io/underscore-introduction/#/)
+* [void 0 in JavaScript](http://stackoverflow.com/questions/7452341/what-does-void-0-mean)
