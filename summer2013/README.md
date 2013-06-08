@@ -77,10 +77,13 @@ If you think you can add interesting stuff - do a pull request !
 
 ## 12. HTML 5 and the new JavaScript API.
 
-* Code examples
+* [Code examples for all APIS](https://github.com/RadoRado/Web-Programming---Lectures-and-Materials/tree/master/summer2013/code/html5-examples)
 
 ## 13. CoffeeScript & jQuery UI
 
 * [CoffeScript official Reference & Guide](http://coffeescript.org/)
 * [The little (cook)book of CoffeeScript](http://arcturo.github.io/library/coffeescript/)
 * [jQuery UI demos with API and Code Examples](http://jqueryui.com/)
+
+## 14. Security. Mod_Rewrite.
+
