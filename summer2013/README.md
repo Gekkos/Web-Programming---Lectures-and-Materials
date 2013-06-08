@@ -13,3 +13,15 @@ A list of additional learning materials:
 * [HTTP Headers from Apache Documentation](http://trafficserver.apache.org/docs/v2/sdk/HTTPHeaders.html)
 * [What is the Interent ? (From IT Crowd)](http://www.youtube.com/watch?v=UTBsm0LzSP0)
 * [A Beginner’s Guide to HTTP and REST (NetTuts+)](http://net.tutsplus.com/tutorials/other/a-beginners-introduction-to-http-and-rest/)
+
+## 2. Introduction to Front End. HTML & CSS.
+
+Some useful links from the slides. For full list, check the slides.
+
+* [PSD to HTML Tutorial](http://net.tutsplus.com/tutorials/site-builds/from-psd-to-html-building-a-set-of-website-designs-step-by-step/)
+* [HTML 5 Compitability check](http://caniuse.com)
+* [Prefix Free](http://leaverou.github.io/prefixfree/)
+* [SASS Tutorial](http://sass-lang.com/tutorial.html)
+* [HTML 5 Validator](http://validator.nu/)
+* [HTML 5 Pollyfils](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills)
+* The last 3 slides from the 2012 Lecture on Front End are full with links and materials. Check them!
