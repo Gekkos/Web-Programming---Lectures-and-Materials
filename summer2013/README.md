@@ -55,3 +55,7 @@ If you think you can add interesting stuff - do a pull request !
 * [Code example from 2012 - A simple web store](https://github.com/RadoRado/PHP2012-Examples)
 * [MySQLi Extension For Beginners](http://codular.com/php-mysqli)
 * [When to use MySQLi over MySQL extension ? (Every possible time !)](http://stackoverflow.com/questions/8891443/when-should-i-use-mysqli-instead-of-mysql)
+
+## 8. Introduction to JavaScript
+
+* [A series of videos done by Douglas Crockford on the JavaScript topic. A must watch.](http://www.yuiblog.com/crockford/)
